@@ -47,7 +47,7 @@ export class DinnerVote extends React.Component {
                 <div className='foodCards'>
                     {this.state.names.map((name, i) =>
                         <div className='foodCard' key={name.id}>
-                           <img src={name.img} />
+                           <img alt={name.name} src={name.img} />
                            <h3>Food Name: {name.name}</h3>
                            <h4>Vote Here If You Want This <button onClick={this.handleAdd.bind(this, i)}>+1</button></h4>
                            <h4>Vote Here If You Do Not Like This <button onClick={this.handleDelete.bind(this, i)}>-1</button></h4>
